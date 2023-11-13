@@ -27,14 +27,14 @@ def get_db():
 
 
 # sample code to connect to postgresql db without sqlalchemy
-while True:
-    try:
-        conn = psycopg2.connect(host='localhost', database='social', user='postgres', password='6085',
-                                cursor_factory=RealDictCursor)
-        cursor = conn.cursor()
-        print("database connection was successful")
-        break
-    except Exception as error:
-        print("connecting to database failed")
-        print("error", error)
-        time.sleep(2)
+# while True:
+#     try:
+#         conn = psycopg2.connect(host='localhost', database='social', user='postgres', password='6085',
+#                                 cursor_factory=RealDictCursor)
+#         cursor = conn.cursor()
+#         print("database connection was successful")
+#         break
+#     except Exception as error:
+#         print("connecting to database failed")
+#         print("error", error)
+#         time.sleep(2)
