@@ -4,7 +4,7 @@ from app import schemas
 def test_root(client, session):
     response = client.get("/")
     print(response.json().get('message'))
-    assert response.json().get('message') == "Hello World"
+    assert response.json().get('message') == "Hello World successfully integrated CI/CD pipeline"
     assert response.status_code == 200
 
 
