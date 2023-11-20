@@ -3,6 +3,7 @@ name: Production Build and Deploy
 on: [push, pull_request]
 jobs:
   job1:
+    runs-on: ubuntu-latest
     environment:
       name: social-app-testing
     env:
